@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Allium — Modern Web Platform</title>
+<meta name="description" content="Allium: platform web modern, cepat, dan aman.">
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="nav glass" id="nav">
+  <a class="brand" href="/">
+    <img src="/assets/logo.svg" alt="Allium logo" class="brand-logo">
+    <span class="brand-name">Allium</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#fitur">Fitur</a></li>
+    <li><a href="#cara-kerja">Cara Kerja</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a href="/login" class="btn btn-ghost">Masuk</a>
+    <a href="/login?mode=daftar" class="btn btn-primary">Daftar Gratis</a>
+  </div>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<header class="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+  <div class="hero-inner">
+    <span class="badge reveal">✨ Platform generasi baru</span>
+    <h1 class="reveal">Satu platform,<br><span class="gradient-text" id="typewriter"></span></h1>
+    <p class="hero-sub reveal">Allium menghadirkan pengalaman web modern — cepat, aman, dan indah. Kelola semuanya dari satu dashboard yang dirancang untuk produktivitas.</p>
+    <div class="hero-actions reveal">
+      <a href="/login?mode=daftar" class="btn btn-primary btn-lg">Mulai Sekarang →</a>
+      <a href="#fitur" class="btn btn-ghost btn-lg">Pelajari Lebih Lanjut</a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat"><strong data-count="12500">0</strong><span>Pengguna aktif</span></div>
+      <div class="stat"><strong data-count="99" data-suffix=",9%">0</strong><span>Uptime</span></div>
+      <div class="stat"><strong data-count="120" data-suffix="+">0</strong><span>Integrasi</span></div>
+    </div>
+  </div>
+</header>
+
+<section id="fitur" class="section">
+  <div class="container">
+    <h2 class="section-title reveal">Dibangun untuk <span class="gradient-text">sesuatu yang besar</span></h2>
+    <p class="section-sub reveal">Semua yang Anda butuhkan, tanpa kerumitan.</p>
+    <div class="grid-3">
+      <div class="card reveal tilt">
+        <div class="card-icon">⚡</div>
+        <h3>Super Cepat</h3>
+        <p>Edge-cached dan dioptimalkan penuh. Halaman dimuat dalam milidetik, di mana pun Anda berada.</p>
+      </div>
+      <div class="card reveal tilt">
+        <div class="card-icon">🔒</div>
+        <h3>Aman Standar Industri</h3>
+        <p>Enkripsi penuh via HTTPS, kata sandi di-hash, dan sesi aman. Data Anda milik Anda.</p>
+      </div>
+      <div class="card reveal tilt">
+        <div class="card-icon">📊</div>
+        <h3>Dashboard Intuitif</h3>
+        <p>Kelola akun dan aktivitas Anda dari dashboard yang bersih dan real-time.</p>
+      </div>
+      <div class="card reveal tilt">
+        <div class="card-icon">🌍</div>
+        <h3>Skala Global</h3>
+        <p>Infrastruktur terdistribusi siap melayani audiens di seluruh dunia tanpa hambatan.</p>
+      </div>
+      <div class="card reveal tilt">
+        <div class="card-icon">🧩</div>
+        <h3>Mudah Diintegrasikan</h3>
+        <p>API bersih dan dokumentasi jelas. Sambungkan tools favorit Anda dalam hitungan menit.</p>
+      </div>
+      <div class="card reveal tilt">
+        <div class="card-icon">💬</div>
+        <h3>Dukungan Ramah</h3>
+        <p>Tim yang benar-benar membalas. Bantuan cepat saat Anda membutuhkannya.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cara-kerja" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title reveal">Mulai dalam <span class="gradient-text">3 langkah</span></h2>
+    <div class="steps">
+      <div class="step reveal">
+        <div class="step-num">01</div>
+        <h3>Daftar</h3>
+        <p>Buat akun gratis dalam 30 detik. Tanpa kartu kredit.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">02</div>
+        <h3>Atur</h3>
+        <p>Kustomisasi workspace Anda sesuai kebutuhan dari dashboard.</p>
+      </div>
+      <div class="step reveal">
+        <div class="step-num">03</div>
+        <h3>Tumbuh</h3>
+        <p>Pantau perkembangan dan skalakan tanpa batas.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="section">
+  <div class="container container-narrow">
+    <h2 class="section-title reveal">Pertanyaan Umum</h2>
+    <div class="faq">
+      <details class="faq-item reveal">
+        <summary>Apakah Allium gratis?</summary>
+        <p>Ya, paket dasar gratis selamanya. Paket berbayar tersedia untuk kebutuhan lanjutan.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Bagaimana keamanan data saya?</summary>
+        <p>Kata sandi di-hash dengan algoritma kuat, semua trafik terenkripsi HTTPS, dan sesi dikelola dengan token aman.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Bisakah saya menghapus akun?</summary>
+        <p>Bisa, kapan saja dari dashboard. Seluruh data Anda akan dihapus permanen.</p>
+      </details>
+      <details class="faq-item reveal">
+        <summary>Apakah ada API?</summary>
+        <p>Ada. REST API dengan dokumentasi lengkap tersedia untuk semua pengguna terdaftar.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <a class="brand" href="/">
+      <img src="/assets/logo.svg" alt="Allium logo" class="brand-logo">
+      <span class="brand-name">Allium</span>
+    </a>
+    <p>© 2026 Allium · allium.biz.id</p>
+  </div>
+</footer>
+
+<script src="/js/main.js"></script>
+</body>
+</html>

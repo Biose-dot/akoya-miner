@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Allium</title>
+<link rel="icon" href="/assets/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav class="dash-nav">
+  <a class="brand" href="/">
+    <img src="/assets/logo.svg" alt="Allium logo" class="brand-logo">
+    <span class="brand-name">Allium</span>
+  </a>
+  <div class="nav-cta" style="display:flex;">
+    <span style="color:var(--muted);font-size:.9rem;align-self:center;">Halo, <strong id="dashName" style="color:var(--text);">…</strong></span>
+    <button class="btn btn-ghost" id="logout" type="button">Keluar</button>
+  </div>
+</nav>
+
+<main class="dash-main">
+  <div class="dash-header">
+    <h1>Dashboard</h1>
+    <p>Ringkasan akun Anda.</p>
+  </div>
+
+  <div class="stat-cards">
+    <div class="stat-card"><div class="label">Paket</div><div class="value" id="kvPlan">—</div></div>
+    <div class="stat-card"><div class="label">Status</div><div class="value" style="color:#86efac;">Aktif</div></div>
+    <div class="stat-card"><div class="label">Anggota sejak</div><div class="value" id="kvSince" style="font-size:1.15rem;">—</div></div>
+  </div>
+
+  <div class="panel">
+    <h2>Informasi Akun</h2>
+    <div class="kv">
+      <span class="k">Nama</span><span id="kvName">—</span>
+      <span class="k">Email</span><span id="kvEmail">—</span>
+      <span class="k">Paket</span><span id="kvPlan2">Gratis</span>
+    </div>
+  </div>
+
+  <div class="panel">
+    <h2>Aksi Cepat</h2>
+    <div class="dash-actions">
+      <a href="/" class="btn btn-ghost">← Kembali ke Beranda</a>
+      <button class="btn btn-primary" type="button" onclick="alert('Sebentar lagi tersedia!')">Jelajahi Fitur</button>
+    </div>
+  </div>
+</main>
+
+<script src="/js/main.js"></script>
+</body>
+</html>
