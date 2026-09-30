@@ -9,7 +9,6 @@ RUN python3 -m venv /opt/venv && /opt/venv/bin/pip install --no-cache-dir flask 
 COPY html/ /data/allium/html/
 COPY api/ /data/allium/api/
 COPY conf/allium.conf /etc/nginx/sites-available/allium
-COPY conf/proxy_params /data/allium/conf/proxy_params
 RUN ln -sf /etc/nginx/sites-available/allium /etc/nginx/sites-enabled/allium \
     && rm -f /etc/nginx/sites-enabled/default
 
@@ -17,6 +16,5 @@ WORKDIR /data/allium/api
 COPY start.sh /data/allium/start.sh
 RUN chmod +x /data/allium/start.sh
 
-# Railway injects $PORT; nginx listens on it via start.sh
 EXPOSE 8080
 CMD ["/data/allium/start.sh"]
